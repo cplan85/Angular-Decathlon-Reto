@@ -77,6 +77,21 @@ export class LandingComponent implements OnInit {
     },
   ];
 
+  featuredPhotosArr = [
+    {
+      image: '../assets/img/elements/hiking group.jpg',
+      hearts: 5000,
+      comments: 25,
+      originalReviewURL: '/productReview/{productId}/1',
+    },
+    {
+      image: '../assets/img/elements/catalonia-trekking.webp',
+      hearts: 2700,
+      comments: 49,
+      originalReviewURL: '/productReview/{productId}/1',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
