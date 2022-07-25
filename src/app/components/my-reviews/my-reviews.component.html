@@ -1,1 +1,30 @@
-<p>my-reviews works!</p>
+<div class="row">
+    <div class="row mb-5">
+        <h2>My Top Reviews</h2>
+        <div
+    class="col-lg-4 col-md-12"
+    *ngFor="let review of myTopReviews; let i = index"
+    >
+        <div class="card top-reviews-card mb-3">
+          <img class="card-img-top featured-photo" src="{{review.image}}" alt="Card image cap" />
+          <div class="card-body">
+            <div class="d-flex flex-row">
+                <div class="card-text">
+                    <img class="icon-img" src="../../../assets/img/elements/heart.png" alt="Card image cap" />{{review.hearts}}
+                </div>
+                <div class="text-muted ms-4">
+                  {{review.points}} pts
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="tags col-3 m-2" *ngFor="let tag of review.tags;" >
+                    {{tag.substring(0,8)}}
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
