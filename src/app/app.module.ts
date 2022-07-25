@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { ChallengesComponent } from './components/challenges/challenges.component';
+import { MyReviewsComponent } from './components/my-reviews/my-reviews.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    LandingComponent
+    LandingComponent,
+    ChallengesComponent,
+    MyReviewsComponent
   ],
   imports: [
     BrowserModule,
