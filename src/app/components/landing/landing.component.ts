@@ -191,12 +191,16 @@ export class LandingComponent implements OnInit {
       hearts: 5000,
       comments: 25,
       originalReviewURL: '/productReview/{productId}/1',
+      userImg: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/John_Doe%2C_born_John_Nommensen_Duchac.jpg',
+      userName: 'John Doe'
     },
     {
       image: '../assets/img/elements/catalonia-trekking.webp',
       hearts: 2700,
       comments: 49,
       originalReviewURL: '/productReview/{productId}/1',
+      userImg: 'https://images.hola.com/us/images/026e-136a35da44e8-70f6d65e9d80-1000/horizontal-1200/quot-madres-paralelas-quot-madrid-photocall.jpg',
+      userName: 'Jane Doe'
     },
   ];
 
