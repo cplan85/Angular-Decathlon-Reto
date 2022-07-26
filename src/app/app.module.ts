@@ -10,6 +10,7 @@ import { ChallengesComponent } from './components/challenges/challenges.componen
 import { MyReviewsComponent } from './components/my-reviews/my-reviews.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ProductReviewComponent } from './components/product-review/product-review.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RegisterComponent } from './components/register/register.component';
     ChallengesComponent,
     MyReviewsComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductReviewComponent
   ],
   imports: [
     BrowserModule,

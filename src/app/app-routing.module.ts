@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MyReviewsComponent } from './components/my-reviews/my-reviews.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ProductReviewComponent } from './components/product-review/product-review.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'my-reviews', component: MyReviewsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-
+  { path: 'review', component: ProductReviewComponent },
 ];
 
 @NgModule({

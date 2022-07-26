@@ -1,0 +1,45 @@
+<div class="card top-reviews-card mb-3">
+    <img class="card-img-top featured-photo" src="{{productReview.image}}" alt="Card image cap" />
+    <div class="card-body">
+      <div class="d-flex flex-row">
+          <div class="card-text">
+              <img class="icon-img" src="../../../assets/img/elements/heart.png" alt="Card image cap" />{{productReview.hearts}}
+          </div>
+          <div class="text-muted ms-4">
+            {{productReview.points}} pts
+          </div>
+         
+      </div>
+      <div class="row">
+          <div class="tags col-3 m-2" *ngFor="let tag of productReview.tags;" >
+              {{tag.substring(0,8)}}
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>PRODUCTS IN PHOTO</h2>
+  <div class="column">
+    <div class=" col-12 m-2" *ngFor="let product of productReview.products;" >
+        <div class="card top-reviews-card mb-3">
+            <div class="d-flex">
+            <img class="product-photo" src="{{product.productPhoto}}" alt="Card image cap" />
+            <div class="m-4" >
+                <div class="d-flex">
+                    <div class="card-text">
+                        <img class="icon-img" src="../../../assets/img/elements/heart.png" alt="Card image cap" />{{product.likes}}
+                    </div>
+                    <div class="text-muted ms-4">
+                      {{product.comments}} pts
+                    </div>
+                </div>
+                <p class="text-muted ms-2">
+                   TOP REVIEW: {{product.topReviewDescription}}...
+                </p>
+                <p class="text-muted ms-2">LINK: {{product. originalReviewURL}}</p>
+                <p>{{product.created}}</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
