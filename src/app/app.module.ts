@@ -11,7 +11,6 @@ import { MyReviewsComponent } from './components/my-reviews/my-reviews.component
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ProductReviewComponent } from './components/product-review/product-review.component';
-import { InteresesComponent } from './intereses/intereses.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { InteresesComponent } from './intereses/intereses.component';
     LoginComponent,
     RegisterComponent,
     ProductReviewComponent,
-    InteresesComponent
   ],
   imports: [
     BrowserModule,
