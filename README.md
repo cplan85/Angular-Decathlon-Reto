@@ -1,17 +1,28 @@
 # Decathlon IT Academy Challenge
 
-The  Decathlon IT Academy Challenge is an Angular application of a product recommendation platform for Decathlon. The platform allows sports users to classify themselves as Sports exports or haitual users.
+[Back-End Repo](https://github.com/fbages/hackatonDecathlonBackendTeam1)
+
+[Data Science Repo](https://github.com/hinojosaad/decathlon-it-academy-data-science)
+
+
+The  Decathlon IT Academy Challenge is an Angular application of a product recommendation platform for Decathlon. The platform allows sports users to classify themselves as Sports experts or habitual users. The aim of the platform is to encourage users to submit product reviews that encourages main platform users to buy Decathlon products.
 
 
 ## **Preview**
 
-## ![tree diagram](src/assets/pokeApp-preview.gif)
+## ![tree diagram](src/assets/preview.gif)
 
 ---
 
 ## :wrench: **Tech used in this project**
 
 In this project we used Angular and Boostrap5 to develop a web app that loads recommended products based on your user profile and data science algorith of products that you would be most interested in purchasing next. Below the recommended products are recommended photos that are associated with reviews, and provide inspiration to help you write your next review. Below that are new products that are retrieved from the backend server. All reviews are retrieved through an API by utilizing the Angular´s HTTPclient. The sidebar demonstrates the ranking based on how many points a user has achieved relative to other expert users. There is a dashboard that demonstrates your monthly Review upload stats.
+
+A user can access his/her Reviews where he is offered a simple card layout of the main hero picture associated with the review with the number of likes, comments, and points recieved for that review. 
+
+Upon clicking the Review, the user can access the main review page, where he/she can see which products are attached to that review, and then this is cross-referenced with the server data related to that product, and the best rated review for the product.
+
+Lastly, the user login involves a person entering standard data such as email and password, as well as the user´s interest and their expertise.
 
 ---
 
@@ -52,11 +63,6 @@ In the project directory.
 ```bash
 ng serve --open or ng s -o
 ```
-
-## :bookmark_tabs: **Usage Instructions**
-
-Upon starting live server, 24 Pokemon cards will load. Type in the name of the Pokemon you want to find in the search field, press enter to load the card, an error message will appear if the name is written incorrectly. 
-Click on any of the cards to view that Pokemon's stats. Click on any evolution to load that pokemon stats.
 
 ## Contributing
 
