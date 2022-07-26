@@ -1,1 +1,34 @@
-<p>intereses works!</p>
+<div class="container text-center">
+    <p>Wellcome John</p>
+    <h1>Your interests</h1>
+  
+    <div class="drop">
+      <p>Sports interest</p>
+      <select ng-options="v.name for v in variants | filter:{type:2}" ng-change="calculateServicesSubTotal(item)"
+        ng-model="item.selectedVariant" ng-show="item.id==8" name="posterVariants"
+        ng-required="item.id==8 && item.quantity > 0" class="ng-pristine ng-valid ng-valid-required">
+        <option value="?" selected="selected"></option>
+        <option value="0">Tennis</option>
+        <option value="1">Football</option>
+        <option value="2">Rugby</option>
+        <option value="3">Swimming</option>
+      </select>
+    </div>
+  
+    <div class="drop mt-3">
+      <p>Your innterests</p>
+      <div class="flex but">
+        <button type="button" class="btn btn-primary">Tennis</button>
+        <button type="button" class="btn btn-primary">Basketball</button>
+        <button type="button" class="btn btn-primary">Soccer</button>
+        <button type="button" class="btn btn-primary">Ping-Pong</button>
+        <button type="button" class="btn btn-primary">Volleyball</button>
+        <button type="button" class="btn btn-primary">Pool</button>
+        <button type="button" class="btn btn-primary">Criquet</button>
+        <button type="button" class="btn btn-primary">Rugby</button>
+      </div>
+    </div>
+  
+    <button type="button" class="btn btn-secondary my-3"><a href="" class="text-white">Submit</a></button>
+  </div>
+  

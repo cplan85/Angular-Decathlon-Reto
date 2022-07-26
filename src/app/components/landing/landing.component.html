@@ -1,21 +1,21 @@
 <div class="row">
     <div class="col-8">
         <div class="row mb-5">
-            <h2>Popular Products</h2>
+            <h2>Recommended products</h2>
     
         <div
-        class="col-lg-3 col-md-6"
+        class="col-12 col-lg-3 col-md-6"
         *ngFor="let product of productsArr; let i = index"
         >
             <div class="card mb-3">
               <img class="card-img-top" src="{{product.image}}" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">{{product.name}}</h5>
-                <p class="card-text">{{product.description.substring(0,15)}}...
-                </p>
+                <p> <span id="reviews-tag">142 reviews</span></p>
                 <p class="card-text">
                   <small class="text-muted">{{product.price}} €</small>
                 </p>
+                <a target="_blank" href="https://www.decathlon.es/es/p/mascara-snorkel-adulto-easybreath-500-oyster/_/R-p-148873?mc=8491266&c=AZUL%20TURQUESA_AZUL" class="btn btn-primary">See product</a>
               </div>
             </div>
           </div>
@@ -27,7 +27,7 @@
         class="col-lg-6 col-md-12"
         *ngFor="let photo of featuredPhotosArr; let i = index"
         >
-            <div class="card featured-photo-card mb-3" [routerLink]="['/review']" >
+            <div class="card featured-photo-card mb-3" [routerLink]="['/review']" id="product-card">
               <img class="card-img-top featured-photo" src="{{photo.image}}" alt="Card image cap"/>
               <div class="card-body">
                 <div class="d-flex flex-row">
@@ -43,7 +43,7 @@
           </div>
         </div>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-md-4">
         <app-sidebar></app-sidebar>
     </div>
 </div>

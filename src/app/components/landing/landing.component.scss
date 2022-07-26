@@ -12,6 +12,10 @@
     max-height:250px;
 }
 
-.card :hover{
+#product-card :hover{
     cursor: pointer;
+}
+
+#reviews-tag {
+    border-bottom: 0.3rem solid #007DBC;
 }
