@@ -1,0 +1,30 @@
+.w100{
+    width: 100%;
+}
+
+.logo{
+    max-width: 200px;
+}
+
+i{
+font-size: 1.5rem;
+}
+
+a.nav-link {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid #004161;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+}
+
+header li.nav-item {
+    padding: 0px 20px;
+}

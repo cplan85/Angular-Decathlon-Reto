@@ -21,9 +21,16 @@ export class ProductsService {
     return this.http.get<any>(url);
   } 
 
+  //fetch user id
   getUser(user_id: number): Observable<any[]> {
-    const url = `${this.apiUrl}${ user_id }`;
+    const url = `${this.apiUrl}/user/${ user_id }`;
     return this.http.get<any>(url);
   }
-  
+
+  //fetch reviews on user product
+  getReviews(user_id: number): Observable<any[]> {
+    const url = `${this.apiUrl}/user/${ user_id }`;
+    return this.http.get<any>(url);
+  }
+
 }

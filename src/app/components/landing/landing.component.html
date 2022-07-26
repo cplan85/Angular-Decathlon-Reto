@@ -27,8 +27,8 @@
         class="col-lg-6 col-md-12"
         *ngFor="let photo of featuredPhotosArr; let i = index"
         >
-            <div class="card featured-photo-card mb-3">
-              <img class="card-img-top featured-photo" src="{{photo.image}}" alt="Card image cap" />
+            <div class="card featured-photo-card mb-3" [routerLink]="['/review']" >
+              <img class="card-img-top featured-photo" src="{{photo.image}}" alt="Card image cap"/>
               <div class="card-body">
                 <div class="d-flex flex-row">
                     <div class="card-text">
