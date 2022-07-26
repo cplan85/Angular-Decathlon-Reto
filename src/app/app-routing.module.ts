@@ -3,11 +3,13 @@ import { ChallengesComponent } from './components/challenges/challenges.componen
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MyReviewsComponent } from './components/my-reviews/my-reviews.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'challenges', component: ChallengesComponent },
   { path: 'my-reviews', component: MyReviewsComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
