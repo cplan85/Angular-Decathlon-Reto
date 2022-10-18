@@ -7,7 +7,9 @@
 
 The  Decathlon IT Academy Challenge is an Angular application of a product recommendation platform for Decathlon. The platform allows sports users to classify themselves as Sports experts or habitual users. The aim of the platform is to encourage users to submit product reviews that encourages main platform users to buy Decathlon products.
 
-Our submission was chosen as the winner of the Hackathon Challenge!
+<img src="1stPrize.png" alt="1st-Prize" width="40"/>
+
+### Our submission was chosen as the winner of the Hackathon Challenge!
 
 ## **Preview**
 
